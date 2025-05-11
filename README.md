@@ -1,8 +1,8 @@
-![BrickBreaker](Images/BrickBreaker-hero-image.png)# BrickBreaker
+# BrickBreaker
 
 A modern Arkanoid-clone game developed with Unity 6, featuring a powerful level editor built with UI Toolkit.
 
-![BrickBreaker](https://via.placeholder.com/800x400?text=BrickBreaker)
+![BrickBreaker](Images/BrickBreaker-hero-image.png)
 
 ## Overview
 
