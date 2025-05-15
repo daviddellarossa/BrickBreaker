@@ -8,12 +8,7 @@ namespace DeeDeeR.BrickBreaker.Levels
     [Serializable]
     public class Cell
     {
-        [SerializeField]
-        private Brick brick;
-        public Brick Brick 
-        {
-            get => brick;
-            set => brick = value;
-        }
+        [field: SerializeField]
+        public Brick Brick  { get; set; }
     }
 }

@@ -9,28 +9,13 @@ namespace DeeDeeR.BrickBreaker.Levels
         private static readonly int DefaultRowNum = 14;
         private static readonly int DefaultColNum = 14;
         
-        [SerializeField]
-        private List<Cell> cells = new List<Cell>();
-        public List<Cell> Cells
-        {
-            get => cells;
-            set => cells = value;
-        }
+        [field:SerializeField]
+        public List<Cell> Cells { get; set; } = new List<Cell>();
 
-        [SerializeField]
-        private int RowNum = DefaultRowNum;
-        public int NumRows
-        {
-            get => RowNum;
-            set => RowNum = value;
-        }
+        [field:SerializeField]
+        public int NumRows { get; set; }
         
-        [SerializeField]
-        private int ColNum = DefaultColNum;
-        public int NumColumns 
-        {
-            get => ColNum;
-            set => ColNum = value;
-        }
+        [field:SerializeField]
+        public int NumColumns  { get; set; }
     }
 }
