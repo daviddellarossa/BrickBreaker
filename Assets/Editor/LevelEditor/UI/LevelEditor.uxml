@@ -1,15 +1,17 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:Template name="LevelToolbar" src="project://database/Assets/Editor/LevelEditor/UI/LevelToolbar.uxml?fileID=9197481963319205126&amp;guid=02e2b82a28b0b424b91000896ce2fbca&amp;type=3#LevelToolbar" />
-    <ui:Template name="LevelLayout" src="project://database/Assets/Editor/LevelEditor/UI/LevelLayout.uxml?fileID=9197481963319205126&amp;guid=eec03e8b5d873474e81c9723e8879c48&amp;type=3#LevelLayout" />
+    <ui:Template name="BrickTypeToolbar" src="project://database/Assets/Editor/LevelEditor/UI/BrickTypeToolbar.uxml?fileID=9197481963319205126&amp;guid=b18878ec3b11c354fab87992a9b112c6&amp;type=3#BrickTypeToolbar" />
+    <ui:Template name="PowerUpToolbar" src="project://database/Assets/Editor/LevelEditor/UI/PowerUpToolbar.uxml?fileID=9197481963319205126&amp;guid=c03d288fc29438245834dcec940c039c&amp;type=3#PowerUpToolbar" />
     <Style src="project://database/Assets/Editor/LevelEditor/UI/LevelEditor.uss?fileID=7433441132597879392&amp;guid=9c1d36cdb9bb7074cafcc4f9858fc479&amp;type=3#LevelEditor" />
-    <ui:VisualElement name="veMain" style="flex-grow: 1; flex-direction: row;">
+    <ui:VisualElement name="veMain" style="flex-grow: 1; flex-direction: row; min-height: 100%; flex-shrink: 0;">
         <ui:VisualElement name="veLeftPanel" style="flex-grow: 0; width: 25%;">
             <ui:Instance template="LevelToolbar" />
             <ui:ListView name="lvLevels" item-template="project://database/Assets/Editor/LevelEditor/UI/LevelListItem.uxml?fileID=9197481963319205126&amp;guid=3565abfad68989e46ad1e5a780755d12&amp;type=3#LevelListItem" binding-source-selection-mode="AutoAssign" fixed-item-height="48" virtualization-method="DynamicHeight" show-border="true" style="flex-grow: 1;" />
         </ui:VisualElement>
-        <ui:VisualElement name="veCentrePanel" data-source-type="DeeDeeR.BrickBreaker.Levels.Level, Assembly-CSharp" enabled="true" style="flex-grow: 1;">
-            <ui:Instance template="LevelLayout" style="flex-direction: column;" />
+        <ui:VisualElement name="veCentrePanel" data-source-type="DeeDeeR.BrickBreaker.Levels.Level, Assembly-CSharp" enabled="true" style="flex-grow: 1; padding-right: 10px; padding-left: 10px;">
+            <ui:Instance template="BrickTypeToolbar" />
+            <ui:Instance template="PowerUpToolbar" />
+            <ui:VisualElement name="veLevelLayout" class="level-layout" style="margin-top: 50px; margin-bottom: 50px;" />
         </ui:VisualElement>
-        <ui:VisualElement name="veRightPanel" data-source-type="DeeDeeR.BrickBreaker.Levels.Level, Assembly-CSharp" style="flex-grow: 0; width: 25%;" />
     </ui:VisualElement>
 </ui:UXML>

@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DeeDeeR.BrickBreaker.Bricks;
 using DeeDeeR.BrickBreaker.Levels;
+using DeeDeeR.BrickBreaker.PowerUps;
 using Editor.GameDataInitializers;
 using UnityEditor;
 using UnityEditor.UIElements;
@@ -20,8 +22,12 @@ public class LevelEditor : EditorWindow
     private VisualTreeAsset m_VisualTreeAsset = default;
 
     private VisualElement veLeftPanel;
-    private VisualElement veRightPanel;
     private VisualElement veCentrePanel;
+    
+    private BrickTypeToolbar _brickTypeToolbar;
+    private PowerUpToolbar _powerUpToolbar;
+
+    private VisualElement veLevelLayout;
 
     private ListView lvLevels;
     private LevelLayout levelLayout;
@@ -45,14 +51,40 @@ public class LevelEditor : EditorWindow
         root.Add(labelFromUXML);
         
         veLeftPanel = root.Q<VisualElement>("veLeftPanel");
-        veRightPanel = root.Q<VisualElement>("veRightPanel");
         veCentrePanel = root.Q<VisualElement>("veCentrePanel");
+        
+        veLevelLayout = veCentrePanel.Q<VisualElement>("veLevelLayout");
         
         lvLevels = veLeftPanel.Q<ListView>("lvLevels");
         levelLayout = veCentrePanel.Q<LevelLayout>("levelLayout");
 
         BindLevelToolbar();
+        BindBrickTypeToolbar();
+        BindPowerUpToolbar();
         BindLevels();
+    }
+
+    private void BindBrickTypeToolbar()
+    {
+        var brickTypeToolbar = veLeftPanel.Q<BrickTypeToolbar>("brickTypeToolbar");
+        brickTypeToolbar.BrickTypeSelectionChanged += BrickTypeToolbarOnBrickTypeSelectionChanged;
+    }
+
+    private void BrickTypeToolbarOnBrickTypeSelectionChanged(object sender, BrickType e)
+    {
+        
+    }
+
+    private void BindPowerUpToolbar()
+    {
+        var powerUpToolbar = veLeftPanel.Q<PowerUpToolbar>("powerUpToolbar");
+        powerUpToolbar.PowerUpSelectionChanged += PowerUpToolbarOnPowerUpSelectionChanged;
+
+    }
+
+    private void PowerUpToolbarOnPowerUpSelectionChanged(object sender, PowerUp e)
+    {
+        
     }
 
     private void BindLevelToolbar()
@@ -144,22 +176,79 @@ public class LevelEditor : EditorWindow
         lvLevels.selectedIndex = 0;
     }
 
+    private Level _selectedLevel = null;
+    private (int row, int column)? _selectedCell = null;
+
     private void LvLevelsOnselectionChanged(IEnumerable<object> selectedObjects)
     {
         var selectedObjectsArray = selectedObjects.ToArray();
         if (!selectedObjectsArray.Any())
         {
+            // TODO: set selected level and selected cell to null
             return;
         }
         
-        var level = selectedObjectsArray[0] as Level;
+        _selectedLevel = selectedObjectsArray[0] as Level;
 
-        if (level == null)
+        if (_selectedLevel == null)
         {
+            // TODO: set selected level and selected cell to null
             return;
         }
 
-        veCentrePanel.dataSource = level;
-        veRightPanel.dataSource = level;
+        BindLevelLayout(_selectedLevel);
+    }
+
+    private void BindLevelLayout(Level level)
+    {
+        veLevelLayout.Clear();
+
+        
+        for (int i = 0; i < level.NumRows; i++)
+        {
+            var veRow = new VisualElement();
+            veRow.name = $"Row{i}";
+            veRow.AddToClassList("layout-row");
+            veLevelLayout.Add(veRow);
+            
+            for (int j = 0; j < level.NumColumns; j++)
+            {
+                var veCell = new VisualElement();
+                veCell.name = $"Cell{i}-{j}";
+                veCell.AddToClassList("layout-cell");
+                veCell.style.flexDirection = FlexDirection.Column;
+                int row = i;
+                int col = j;
+                veCell.focusable = true;
+                veCell.RegisterCallback<ClickEvent>(evt => OnCellClicked(row, col));
+                veCell.RegisterCallback((ContextualMenuPopulateEvent evt) =>
+                {
+                    evt.menu.AppendAction("Action A", (x) => { });
+                    evt.menu.AppendAction("Action B", (x) => { });
+                });
+                veCell.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
+                {
+                    Debug.Log("Contextual menu");
+                }));
+                
+                veRow.Add(veCell);
+            }
+        }
+    }
+
+    private void OnCellClicked(int row, int col)
+    {
+        VisualElement cellElement = null;
+        if (_selectedCell.HasValue)
+        {
+            cellElement = veLevelLayout.Q<VisualElement>($"Cell{_selectedCell.Value.row}-{_selectedCell.Value.column}");
+            cellElement?.RemoveFromClassList("selected");
+        }
+        
+        Debug.Log($"Cell clicked: Row {row}, Column {col}");
+        _selectedCell = (row, col);
+    
+        cellElement = veLevelLayout.Q($"Cell{row}-{col}");
+        cellElement?.AddToClassList("selected");
     }
 }

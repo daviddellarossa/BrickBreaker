@@ -1,25 +1,5 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:Template name="LevelDetails" src="project://database/Assets/Editor/LevelEditor/UI/LevelDetails.uxml?fileID=9197481963319205126&amp;guid=f88eee4a0b7583c42a6b3be7a9e823cf&amp;type=3#LevelDetails" />
-    <ui:VisualElement style="flex-grow: 1;">
-        <ui:Label text="Label" name="lblLevelName">
-            <Bindings>
-                <ui:DataBinding property="text" data-source-path="_Name_k__BackingField" binding-mode="ToTarget" />
-            </Bindings>
-        </ui:Label>
-        <ui:VisualElement style="flex-grow: 1; flex-direction: row; display: none;">
-            <ui:Label text="Label" name="lblRows" style="flex-shrink: 1;">
-                <Bindings>
-                    <ui:DataBinding property="text" data-source-path="_NumRows_k__BackingField" binding-mode="ToTarget" />
-                </Bindings>
-            </ui:Label>
-            <ui:Label text="x" name="lblX" />
-            <ui:Label text="Label" name="lblColumns" style="flex-shrink: 1;">
-                <Bindings>
-                    <ui:DataBinding property="text" data-source-path="_NumColumns_k__BackingField" binding-mode="ToTarget" />
-                </Bindings>
-            </ui:Label>
-        </ui:VisualElement>
-    </ui:VisualElement>
     <ui:Foldout text="Foldout" data-source-type="DeeDeeR.BrickBreaker.Levels.Level, Assembly-CSharp" name="Foldout">
         <LevelListItem name="levelListItem" data-source-type="DeeDeeR.BrickBreaker.Levels.Level, Assembly-CSharp">
             <ui:Instance template="LevelDetails" />

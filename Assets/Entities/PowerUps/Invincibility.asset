@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 542face0c701c6a42a83de8c51e8555b, type: 3}
-  m_Name: WidePaddlePowerUp
+  m_Script: {fileID: 11500000, guid: e11f1b2e0327d5347b874071cd504566, type: 3}
+  m_Name: Invincibility
   m_EditorClassIdentifier: 
   fallSpeed: 2
   rotationSpeed: 30
-  paddleScaleFactor: 1.5
+  powerUpName: Invincibility
+  sprite: {fileID: -192531820, guid: 868038b419dec2a448c7e65911161cd7, type: 3}
   duration: 10

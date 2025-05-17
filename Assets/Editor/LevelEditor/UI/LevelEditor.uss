@@ -3,3 +3,58 @@
     -unity-font-style: bold;
     color: rgb(68, 138, 255);
 }
+
+.level-layout {
+    flex-grow: 0;
+}
+
+.layout-row {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.layout-column {
+    
+}
+
+.layout-cell {
+    border-width: 1px;
+    border-color: black;
+    background-color: #404040;
+    flex-grow: 1;
+    height: 30px;
+    cursor: link;
+}
+
+.layout-cell:hover {
+    border-color: rgb(68, 138, 255);
+}
+
+.layout-cell.selected {
+    border-color: rgb(68, 138, 255);
+}
+
+.toolbar {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.toolbar .toolbar-button {
+    flex-grow: 1;
+    min-height: 30px;
+    max-height: 80px;
+    max-width: 80px;
+    cursor: link;
+}
+
+.toolbar .toolbar-button:hover {
+    border-color: rgb(68, 138, 255);
+    border-width: 2px;
+}
+
+.toolbar .toolbar-button.selected {
+    border-color: rgb(68, 138, 255);
+    border-width: 2px;
+}

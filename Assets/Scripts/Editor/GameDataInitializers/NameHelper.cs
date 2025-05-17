@@ -25,14 +25,14 @@
         // PowerUp Names
         public static class PowerUpNames
         {
-            public const string ExtraLifePowerUp = "ExtraLifePowerUp";
-            public const string MultiBallPowerUp = "MultiBallPowerUp";
-            public const string WidePaddlePowerUp = "WidePaddlePowerUp";
-            public const string LaserPowerUp = "LaserPowerUp";
-            public const string MagnetPowerUp = "MagnetPowerUp";
-            public const string SpeedUpPowerUp = "SpeedUpPowerUp";
-            public const string SlowDownPowerUp = "SlowDownPowerUp";
-            public const string InvincibilityPowerUp = "InvincibilityPowerUp";
+            public const string ExtraLifePowerUp = "ExtraLife";
+            public const string MultiBallPowerUp = "MultiBall";
+            public const string WidePaddlePowerUp = "WidePaddle";
+            public const string LaserPowerUp = "Laser";
+            public const string MagnetPowerUp = "Magnet";
+            public const string SpeedUpPowerUp = "SpeedUp";
+            public const string SlowDownPowerUp = "SlowDown";
+            public const string InvincibilityPowerUp = "Invincibility";
         }
     }
 }

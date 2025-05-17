@@ -11,14 +11,37 @@ namespace DeeDeeR.BrickBreaker.Bricks
         [SerializeReference]
         private HitPointStrategy hitPointStrategy;
         
-        [field:SerializeField]
-        public string Id { get; set; }
+        [SerializeField]
+        private string id;
+        public string Id
+        {
+            get => id;
+            set => id = value;
+        }
         
-        [field:SerializeField]
-        public Color Color { get; set; }
+        [SerializeField]
+        private Color color;
+        public Color Color
+        {
+            get => color;
+            set => color = value;
+        }
         
-        [field:SerializeField]
-        public int Value { get; set; }
+        [SerializeField]
+        private int value;
+        public int Value
+        {
+            get => value;
+            set => value = value;
+        }
+        
+        [SerializeField]
+        private string brickTypeName;
+        public string BrickTypeName
+        {
+            get => brickTypeName;
+            set => brickTypeName = value;
+        }
         
         public HitPointStrategy HitPointStrategy
         {

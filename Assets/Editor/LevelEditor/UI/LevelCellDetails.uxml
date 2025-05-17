@@ -1,0 +1,25 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/LevelEditor/UI/LevelEditor.uss?fileID=7433441132597879392&amp;guid=9c1d36cdb9bb7074cafcc4f9858fc479&amp;type=3#LevelEditor" />
+    <LevelCellDetails data-source-type="DeeDeeR.BrickBreaker.Levels.Cell, Assembly-CSharp">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement data-source-path="brick" style="flex-grow: 1; flex-direction: row;">
+                <ui:Label text="Brick type:" name="lblBrickTypeHeader" />
+                <ui:Label name="lblBrickName" text="None" selectable="false">
+                    <Bindings>
+                        <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="_BrickType_k__BackingField.brickTypeName" />
+                    </Bindings>
+                </ui:Label>
+                <ui:Button text="Change" name="btnChangeBrickType" />
+            </ui:VisualElement>
+            <ui:VisualElement data-source-path="powerUp" style="flex-grow: 1; flex-direction: row;">
+                <ui:Label text="PowerUp Type:" name="lblPowerUpHeader" />
+                <ui:Label text="None" name="lblPowerUp" enable-rich-text="true">
+                    <Bindings>
+                        <ui:DataBinding property="text" data-source-path="powerUpName" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:Label>
+                <ui:Button text="Change" name="btnChangePowerUp" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </LevelCellDetails>
+</ui:UXML>

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/LevelEditor/UI/LevelEditor.uss?fileID=7433441132597879392&amp;guid=9c1d36cdb9bb7074cafcc4f9858fc479&amp;type=3#LevelEditor" />
+    <BrickTypeToolbar style="flex-grow: 1;">
+        <ui:VisualElement name="veMain" class="toolbar" />
+    </BrickTypeToolbar>
+</ui:UXML>
