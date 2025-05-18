@@ -8,34 +8,39 @@ namespace DeeDeeR.BrickBreaker.Bricks
     public class BrickType : ScriptableObject
     {
         [SerializeField]
-        private string id;
-        
-        [SerializeField]
-        private Color color;
-        
-        [SerializeField]
-        private int value;
-        
-        [SerializeField]
         [SerializeReference]
         private HitPointStrategy hitPointStrategy;
         
+        [SerializeField]
+        private string id;
         public string Id
         {
             get => id;
             set => id = value;
         }
         
+        [SerializeField]
+        private Color color;
         public Color Color
         {
             get => color;
             set => color = value;
         }
         
+        [SerializeField]
+        private int value;
         public int Value
         {
             get => value;
-            set => this.value = value;
+            set => value = value;
+        }
+        
+        [SerializeField]
+        private string brickTypeName;
+        public string BrickTypeName
+        {
+            get => brickTypeName;
+            set => brickTypeName = value;
         }
         
         public HitPointStrategy HitPointStrategy

@@ -53,6 +53,7 @@ namespace Editor
         private static void CreateBrickType(string id, string name, Color color, int value, HitPointStrategy strategy)
         {
             var brick = ScriptableObjectHelper.CreateScriptableObject<BrickType>(name, PathHelper.BrickTypesPath);
+            brick.BrickTypeName = name;
             brick.Id = id;
             brick.Color = color;
             brick.Value = value;

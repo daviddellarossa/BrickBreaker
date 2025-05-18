@@ -36,9 +36,10 @@ namespace Editor.GameDataInitializers
         }
         
         // Helper method to create power-ups consistently
-        private static T CreatePowerUp<T>(string name, string path) where T : ScriptableObject
+        private static T CreatePowerUp<T>(string name, string path) where T : PowerUp
         {
             var powerUp = ScriptableObjectHelper.CreateScriptableObject<T>(name, path);
+            powerUp.PowerUpName = name;
             EditorUtility.SetDirty(powerUp);
             return powerUp;
         }

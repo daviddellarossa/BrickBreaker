@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7a86304084286a47900124d941b0f, type: 3}
   m_Name: Silver
   m_EditorClassIdentifier: 
+  hitPointStrategy: {fileID: 11400000, guid: 705fc108a2cc4544089ee99d8ec3541e, type: 2}
   id: 08d9c510-3c59-4ce1-7f98-e3230158e474
   color: {r: 0.7529413, g: 0.7529413, b: 0.7529413, a: 1}
   value: 0
-  hitPointStrategy: {fileID: 11400000, guid: 705fc108a2cc4544089ee99d8ec3541e, type: 2}
+  brickTypeName: Silver

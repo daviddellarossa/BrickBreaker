@@ -14,788 +14,987 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cells:
   - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  - brick:
-      _brickType: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
-      _initialHitPoints: 4
-      _hitPoints: 4
-  RowNum: 14
-  ColNum: 14
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  - brick:
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 60f8f7efa84370e4283c0949a4b32206, type: 2}
+      <InitialHitPoints>k__BackingField: 4
+      <HitPoints>k__BackingField: 4
+    powerUp: {fileID: 0}
+  intValues: 010000000200000003000000
+  numRows: 14
+  numColumns: 14
+  levelName: 
+  sortingOrder: 0
