@@ -6,6 +6,7 @@
 
 .level-layout {
     flex-grow: 0;
+    padding: 10px;
 }
 
 .layout-row {

@@ -14,6 +14,8 @@ public partial class BrickTypeToolbar : VisualElement
     
     private BrickType _selectedBrickType = null;
     
+    public BrickType SelectedBrickType => _selectedBrickType;
+    
     private VisualElement _veMain;
     public BrickTypeToolbar()
     {
@@ -36,32 +38,37 @@ public partial class BrickTypeToolbar : VisualElement
 
         foreach (var brickType in brickTypes)
         {
-            var button = new Button(() =>
-            {
-                BrickTypeSelectionChanged?.Invoke(this, brickType);
-            });
-            button.name = brickType.BrickTypeName;
-            button.AddToClassList("toolbar-button");
-            button.style.backgroundColor = brickType.Color;
-            
-            button.clicked += () => OnBrickTypeButtonClicked(brickType);
-            
+            var button = AddButton(brickType, brickType.BrickTypeName, string.Empty, brickType.BrickTypeName, brickType.Color);
+
             _veMain.Add(button);
+            _brickTypes.Add(null);
         }
     }
-
+    
     private void AddNoneButton()
     {
-        var noneButton = new Button(() =>
-        {
-            BrickTypeSelectionChanged?.Invoke(this, null);
-        });
-        noneButton.text = "None";
-        noneButton.AddToClassList("toolbar-button");
+        var button = AddButton(null, "None", "None","No selection");;
         
-        noneButton.clicked += () => OnBrickTypeButtonClicked(null);
+        _veMain.Add(button);
+        _brickTypes.Add(null);
+    }
 
-        _veMain.Add(noneButton);
+    private Button AddButton(BrickType brickType, string buttonName, string buttonText, string buttonTooltip, UnityEngine.Color? color = null)
+    {
+        var button = new Button(() =>
+        {
+            BrickTypeSelectionChanged?.Invoke(this, brickType);
+        });
+        button.name = buttonName;
+        button.text = buttonText;
+        button.tooltip = buttonTooltip;
+        button.AddToClassList("toolbar-button");
+        if (color.HasValue)
+        {
+            button.style.backgroundColor = color.Value;
+        }
+        button.clicked += () => OnBrickTypeButtonClicked(brickType);
+        return button;
     }
 
     private void OnDetachFromPanel(DetachFromPanelEvent evt)
@@ -71,10 +78,7 @@ public partial class BrickTypeToolbar : VisualElement
     
     private void OnBrickTypeButtonClicked(BrickType brickType)
     {
-        if (_selectedBrickType)
-        {
-            _veMain.Q<Button>(_selectedBrickType.BrickTypeName).RemoveFromClassList("selected");
-        }
+        CancelCurrentSelection();
 
         if (brickType == null)
         {
@@ -84,5 +88,13 @@ public partial class BrickTypeToolbar : VisualElement
         _selectedBrickType = brickType;
 
         BrickTypeSelectionChanged?.Invoke(this, brickType);
+    }
+
+    public void CancelCurrentSelection()
+    {
+        if (_selectedBrickType)
+        {
+            _veMain.Q<Button>(_selectedBrickType.BrickTypeName).RemoveFromClassList("selected");
+        }
     }
 }

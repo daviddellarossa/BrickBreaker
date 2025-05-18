@@ -11,6 +11,8 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
+public delegate void ExecToolbarActionOnCell(int row, int col);
+
 public class LevelEditor : EditorWindow
 {
     [FormerlySerializedAs("_defaultNumberOfRows")] [SerializeField] 
@@ -27,12 +29,15 @@ public class LevelEditor : EditorWindow
     private BrickTypeToolbar _brickTypeToolbar;
     private PowerUpToolbar _powerUpToolbar;
 
-    private VisualElement veLevelLayout;
-
     private ListView lvLevels;
     private LevelLayout levelLayout;
     
     private List<Level> _levels = new List<Level>();
+
+    private ExecToolbarActionOnCell _execToolbarActionOnCell;
+    
+    private Level _selectedLevel = null;
+    private (int row, int column)? _selectedCell = null;
 
     [MenuItem("Window/UI Toolkit/LevelEditor")]
     public static void ShowExample()
@@ -53,10 +58,14 @@ public class LevelEditor : EditorWindow
         veLeftPanel = root.Q<VisualElement>("veLeftPanel");
         veCentrePanel = root.Q<VisualElement>("veCentrePanel");
         
-        veLevelLayout = veCentrePanel.Q<VisualElement>("veLevelLayout");
+        // veLevelLayout = veCentrePanel.Q<VisualElement>("veLevelLayout");
         
         lvLevels = veLeftPanel.Q<ListView>("lvLevels");
-        levelLayout = veCentrePanel.Q<LevelLayout>("levelLayout");
+        levelLayout = veCentrePanel.Q<LevelLayout>();
+        levelLayout.CellSelected += LevelLayoutOnCellSelected;
+        
+        _brickTypeToolbar = veCentrePanel.Q<BrickTypeToolbar>();
+        _powerUpToolbar = veCentrePanel.Q<PowerUpToolbar>();
 
         BindLevelToolbar();
         BindBrickTypeToolbar();
@@ -64,27 +73,45 @@ public class LevelEditor : EditorWindow
         BindLevels();
     }
 
+    private void LevelLayoutOnCellSelected(object sender, CellSelectedEventArgs e)
+    {
+        _execToolbarActionOnCell(e.Row, e.Column);;
+    }
+
+
     private void BindBrickTypeToolbar()
     {
-        var brickTypeToolbar = veLeftPanel.Q<BrickTypeToolbar>("brickTypeToolbar");
-        brickTypeToolbar.BrickTypeSelectionChanged += BrickTypeToolbarOnBrickTypeSelectionChanged;
+        if (_brickTypeToolbar == null)
+        {
+            Debug.LogError("BrickTypeToolbar not found");
+            return;
+        }
+        _brickTypeToolbar.BrickTypeSelectionChanged += BrickTypeToolbarOnBrickTypeSelectionChanged;
     }
 
     private void BrickTypeToolbarOnBrickTypeSelectionChanged(object sender, BrickType e)
     {
-        
+        _powerUpToolbar.CancelCurrentSelection();
+        _execToolbarActionOnCell = AddBrickTypeToCell;
     }
 
     private void BindPowerUpToolbar()
     {
-        var powerUpToolbar = veLeftPanel.Q<PowerUpToolbar>("powerUpToolbar");
-        powerUpToolbar.PowerUpSelectionChanged += PowerUpToolbarOnPowerUpSelectionChanged;
+
+        if (_powerUpToolbar == null)
+        {
+            Debug.LogError("PowerUpToolbar not found");
+            return;
+        }
+        _powerUpToolbar.PowerUpSelectionChanged += PowerUpToolbarOnPowerUpSelectionChanged;
 
     }
 
     private void PowerUpToolbarOnPowerUpSelectionChanged(object sender, PowerUp e)
     {
-        
+        _brickTypeToolbar.CancelCurrentSelection();
+
+        _execToolbarActionOnCell = AddPowerUpToCell;
     }
 
     private void BindLevelToolbar()
@@ -169,17 +196,14 @@ public class LevelEditor : EditorWindow
         _levels.AddRange(levels);
         _levels.Sort((x, y) => x.SortingOrder.CompareTo(y.SortingOrder));
         
-        lvLevels.selectionChanged += LvLevelsOnselectionChanged;
+        lvLevels.selectionChanged += LvLevelsOnSelectionChanged;
 
         lvLevels.itemsSource = _levels;
 
         lvLevels.selectedIndex = 0;
     }
 
-    private Level _selectedLevel = null;
-    private (int row, int column)? _selectedCell = null;
-
-    private void LvLevelsOnselectionChanged(IEnumerable<object> selectedObjects)
+    private void LvLevelsOnSelectionChanged(IEnumerable<object> selectedObjects)
     {
         var selectedObjectsArray = selectedObjects.ToArray();
         if (!selectedObjectsArray.Any())
@@ -201,54 +225,28 @@ public class LevelEditor : EditorWindow
 
     private void BindLevelLayout(Level level)
     {
-        veLevelLayout.Clear();
+        levelLayout.BindLevelLayout(level);
+    }
+    
+    private void AddBrickTypeToCell(int row, int column)
+    {
+        var selectedBrickType = _brickTypeToolbar.SelectedBrickType;
 
-        
-        for (int i = 0; i < level.NumRows; i++)
+        if (!selectedBrickType)
         {
-            var veRow = new VisualElement();
-            veRow.name = $"Row{i}";
-            veRow.AddToClassList("layout-row");
-            veLevelLayout.Add(veRow);
-            
-            for (int j = 0; j < level.NumColumns; j++)
-            {
-                var veCell = new VisualElement();
-                veCell.name = $"Cell{i}-{j}";
-                veCell.AddToClassList("layout-cell");
-                veCell.style.flexDirection = FlexDirection.Column;
-                int row = i;
-                int col = j;
-                veCell.focusable = true;
-                veCell.RegisterCallback<ClickEvent>(evt => OnCellClicked(row, col));
-                veCell.RegisterCallback((ContextualMenuPopulateEvent evt) =>
-                {
-                    evt.menu.AppendAction("Action A", (x) => { });
-                    evt.menu.AppendAction("Action B", (x) => { });
-                });
-                veCell.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
-                {
-                    Debug.Log("Contextual menu");
-                }));
-                
-                veRow.Add(veCell);
-            }
+            return;
         }
+        
+        levelLayout.SetCellBrick(row, column, new Brick(){ BrickType = selectedBrickType });
     }
 
-    private void OnCellClicked(int row, int col)
+    private void AddPowerUpToCell(int row, int column)
     {
-        VisualElement cellElement = null;
-        if (_selectedCell.HasValue)
+        var selectedPowerUp = _powerUpToolbar.SelectedPowerUp;
+        if (!selectedPowerUp)
         {
-            cellElement = veLevelLayout.Q<VisualElement>($"Cell{_selectedCell.Value.row}-{_selectedCell.Value.column}");
-            cellElement?.RemoveFromClassList("selected");
+            return;
         }
-        
-        Debug.Log($"Cell clicked: Row {row}, Column {col}");
-        _selectedCell = (row, col);
-    
-        cellElement = veLevelLayout.Q($"Cell{row}-{col}");
-        cellElement?.AddToClassList("selected");
+        levelLayout.SetCellPowerUp(row, column, selectedPowerUp);
     }
 }
