@@ -9,14 +9,47 @@ using UnityEngine.UIElements;
 public partial class PowerUpToolbar: VisualElement
 {
     public event EventHandler<PowerUp> PowerUpSelectionChanged;
+    public event EventHandler<ToolbarMode> ToolbarModeChanged;
 
     private List<PowerUp> _powerUps = new();
     
     private PowerUp _selectedPowerUp = null;
+
+    private ToolbarMode _toolbarMode = global::ToolbarMode.Set;
     
     public PowerUp SelectedPowerUp => _selectedPowerUp;
-    
+
     private VisualElement _veMain;
+    private Button _btnIgnore;
+    private Button _btnUnset;
+    
+    public ToolbarMode ToolbarMode
+    {
+        get => _toolbarMode;
+        private set
+        {
+            _toolbarMode = value;
+            CancelCurrentSelection();
+            switch (value)
+            {
+                case ToolbarMode.Ignore:
+                    _btnIgnore.AddToClassList("selected");
+                    _btnUnset.RemoveFromClassList("selected");
+                    break;   
+                case ToolbarMode.Unset:
+                    _btnIgnore.RemoveFromClassList("selected");
+                    _btnUnset.AddToClassList("selected");
+                    break;
+                case ToolbarMode.Set:
+                    _btnIgnore.RemoveFromClassList("selected");
+                    _btnUnset.RemoveFromClassList("selected");
+                    break;
+                default:
+                    break;
+            }
+            ToolbarModeChanged?.Invoke(this, value);
+        }   
+    }
     
     public PowerUpToolbar()
     {
@@ -29,46 +62,60 @@ public partial class PowerUpToolbar: VisualElement
     {
         _veMain = this.Q("veMain");
         
-        AddNoneButton();
+        AddIgnoreButton();
+        AddUnsetButton();
         AddPowerUpButtons();
     }
 
-    private void AddNoneButton()
+    private void AddIgnoreButton()
     {
-        var button = AddButton(
-            powerUp: null, 
-            buttonName: "None", 
-            buttonText: "None", 
-            buttonTooltip: "No selection", 
+        _btnIgnore = AddButton(
+            buttonName: "Ignore", 
+            buttonText: "Ignore", 
+            buttonTooltip: "Ignore selection", 
             sprite: null);
-
-        _veMain.Add(button);
+        
+        _btnIgnore.clicked += OnIgnorePowerUpButtonClicked;
+        
+        _veMain.Add(_btnIgnore);
         _powerUps.Add(null);
     }
+    
+    private void AddUnsetButton()
+    {
+        _btnUnset = AddButton(
+            buttonName: "Unset", 
+            buttonText: "Unset", 
+            buttonTooltip: "Cancel selection", 
+            sprite: null);
 
+        _btnUnset.clicked += OnUnsetPowerUpButtonClicked;
+
+        _veMain.Add(_btnUnset);
+        _powerUps.Add(null);
+    }
+    
     private void AddPowerUpButtons()
     {
         var powerUps = ScriptableObjectHelper.GetAllScriptableObjects<PowerUp>(PathHelper.PowerUpsPath);
         foreach (var powerUp in powerUps)
         {
             var button = AddButton(
-                powerUp: powerUp,
                 buttonName: powerUp.PowerUpName,
                 buttonText: string.Empty,
                 buttonTooltip: powerUp.PowerUpName,
                 sprite: powerUp.Sprite);
+            
+            button.clicked += () => OnPowerUpButtonClicked(powerUp);
 
             _veMain.Add(button);
             _powerUps.Add(powerUp);
         }
     }
 
-    private Button AddButton(PowerUp powerUp, string buttonName, string buttonText, string buttonTooltip, Sprite sprite = null)
+    private Button AddButton(string buttonName, string buttonText, string buttonTooltip, Sprite sprite = null)
     {
-        var button = new Button(() =>
-        {
-            PowerUpSelectionChanged?.Invoke(this, powerUp);
-        });
+        var button = new Button();
         button.name = buttonName;
         button.text = buttonText;
         button.tooltip = buttonTooltip;
@@ -78,8 +125,19 @@ public partial class PowerUpToolbar: VisualElement
             button.iconImage = Background.FromSprite(sprite);
         }
         
-        button.clicked += () => OnPowerUpButtonClicked(powerUp);
         return button;
+    }
+    
+    private void OnIgnorePowerUpButtonClicked()
+    {
+        this.ToolbarMode = ToolbarMode.Ignore;
+        
+    }
+
+    private void OnUnsetPowerUpButtonClicked()
+    {
+        CancelCurrentSelection();
+        this.ToolbarMode = ToolbarMode.Unset;
     }
 
     private void OnDetachFromPanel(DetachFromPanelEvent evt)
@@ -89,13 +147,15 @@ public partial class PowerUpToolbar: VisualElement
     
     private void OnPowerUpButtonClicked(PowerUp powerUp)
     {
+        ToolbarMode = ToolbarMode.Set;
+        
         CancelCurrentSelection();
 
-        if (powerUp == null)
+        if (!powerUp)
         {
             return;
         }
-        _veMain.Q<Button>(powerUp.PowerUpName).AddToClassList("selected");
+        SetSelection(powerUp);
         _selectedPowerUp = powerUp;
 
         PowerUpSelectionChanged?.Invoke(this, powerUp);
@@ -103,9 +163,28 @@ public partial class PowerUpToolbar: VisualElement
     
     public void CancelCurrentSelection()
     {
-        if (_selectedPowerUp)
+        CancelSelection(_selectedPowerUp);
+    }
+    
+    public void CancelSelection(PowerUp powerUp)
+    {
+        if (powerUp)
         {
-            _veMain.Q<Button>(_selectedPowerUp.PowerUpName).RemoveFromClassList("selected");
+            _veMain.Q<Button>(powerUp.PowerUpName).RemoveFromClassList("selected");
         }
     }
+    
+    public void SetSelection(PowerUp powerUp)
+    {
+        if (powerUp)
+        {
+            _veMain.Q<Button>(powerUp.PowerUpName).AddToClassList("selected");
+        }
+    }
+}
+public enum ToolbarMode
+{
+    Ignore,
+    Unset,
+    Set,
 }

@@ -11,7 +11,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
-public delegate void ExecToolbarActionOnCell(int row, int col);
+// public delegate void ExecToolbarActionOnCell(int row, int col);
 
 public class LevelEditor : EditorWindow
 {
@@ -34,7 +34,7 @@ public class LevelEditor : EditorWindow
     
     private List<Level> _levels = new List<Level>();
 
-    private ExecToolbarActionOnCell _execToolbarActionOnCell;
+    // private ExecToolbarActionOnCell _execToolbarActionOnCell;
     
     private Level _selectedLevel = null;
     private (int row, int column)? _selectedCell = null;
@@ -72,29 +72,9 @@ public class LevelEditor : EditorWindow
         BindPowerUpToolbar();
         BindLevels();
     }
-
-    private void LevelLayoutOnCellSelected(object sender, CellSelectedEventArgs e)
-    {
-        _execToolbarActionOnCell(e.Row, e.Column);;
-    }
-
-
-    private void BindBrickTypeToolbar()
-    {
-        if (_brickTypeToolbar == null)
-        {
-            Debug.LogError("BrickTypeToolbar not found");
-            return;
-        }
-        _brickTypeToolbar.BrickTypeSelectionChanged += BrickTypeToolbarOnBrickTypeSelectionChanged;
-    }
-
-    private void BrickTypeToolbarOnBrickTypeSelectionChanged(object sender, BrickType e)
-    {
-        _powerUpToolbar.CancelCurrentSelection();
-        _execToolbarActionOnCell = AddBrickTypeToCell;
-    }
-
+    
+    #region Bindings
+    
     private void BindPowerUpToolbar()
     {
 
@@ -107,13 +87,16 @@ public class LevelEditor : EditorWindow
 
     }
 
-    private void PowerUpToolbarOnPowerUpSelectionChanged(object sender, PowerUp e)
+    private void BindBrickTypeToolbar()
     {
-        _brickTypeToolbar.CancelCurrentSelection();
-
-        _execToolbarActionOnCell = AddPowerUpToCell;
+        if (_brickTypeToolbar == null)
+        {
+            Debug.LogError("BrickTypeToolbar not found");
+            return;
+        }
+        _brickTypeToolbar.BrickTypeSelectionChanged += BrickTypeToolbarOnBrickTypeSelectionChanged;
     }
-
+    
     private void BindLevelToolbar()
     {
         var levelToolbar = veLeftPanel.Q<LevelToolbar>("levelToolbar");
@@ -121,7 +104,53 @@ public class LevelEditor : EditorWindow
         levelToolbar.DeleteLevelEvent += LevelToolbarOnDeleteLevelEvent;
         levelToolbar.SortListEvent += LevelToolbarOnSortListEvent;
     }
+    
+    private void BindLevels()
+    {
+        _levels.Clear();
+        
+        var levels = ScriptableObjectHelper.GetAllScriptableObjects<Level>(PathHelper.LevelsPath);
+        _levels.AddRange(levels);
+        _levels.Sort((x, y) => x.SortingOrder.CompareTo(y.SortingOrder));
+        
+        lvLevels.selectionChanged += LvLevelsOnSelectionChanged;
 
+        lvLevels.itemsSource = _levels;
+
+        lvLevels.selectedIndex = 0;
+    }
+    
+    private void BindLevelLayout(Level level)
+    {
+        levelLayout.BindLevelLayout(level);
+    }
+    
+    #endregion
+    
+    #region Levels Events
+    private void LvLevelsOnSelectionChanged(IEnumerable<object> selectedObjects)
+    {
+        var selectedObjectsArray = selectedObjects.ToArray();
+        if (!selectedObjectsArray.Any())
+        {
+            // TODO: set selected level and selected cell to null
+            return;
+        }
+        
+        _selectedLevel = selectedObjectsArray[0] as Level;
+
+        if (_selectedLevel == null)
+        {
+            // TODO: set selected level and selected cell to null
+            return;
+        }
+
+        BindLevelLayout(_selectedLevel);
+    }
+    
+    #endregion
+    
+    #region LevelToolbar Events
     private void LevelToolbarOnSortListEvent(object sender, EventArgs e)
     {
         _levels.Sort((x, y) => x.SortingOrder.CompareTo(y.SortingOrder));
@@ -188,58 +217,71 @@ public class LevelEditor : EditorWindow
         lvLevels.selectedIndex = _levels.Count - 1;
     }
 
-    private void BindLevels()
+    #endregion
+    
+    #region BrickTypeToolbar Events
+    private void BrickTypeToolbarOnBrickTypeSelectionChanged(object sender, BrickType e)
     {
-        _levels.Clear();
-        
-        var levels = ScriptableObjectHelper.GetAllScriptableObjects<Level>(PathHelper.LevelsPath);
-        _levels.AddRange(levels);
-        _levels.Sort((x, y) => x.SortingOrder.CompareTo(y.SortingOrder));
-        
-        lvLevels.selectionChanged += LvLevelsOnSelectionChanged;
-
-        lvLevels.itemsSource = _levels;
-
-        lvLevels.selectedIndex = 0;
+        // _powerUpToolbar.CancelCurrentSelection();
+        // _execToolbarActionOnCell = AddBrickTypeToCell;
     }
 
-    private void LvLevelsOnSelectionChanged(IEnumerable<object> selectedObjects)
+    
+    private void UpdateCellBrickType(CellSelectedEventArgs e)
     {
-        var selectedObjectsArray = selectedObjects.ToArray();
-        if (!selectedObjectsArray.Any())
+        if (_brickTypeToolbar.ToolbarMode == ToolbarMode.Ignore)
         {
-            // TODO: set selected level and selected cell to null
             return;
         }
-        
-        _selectedLevel = selectedObjectsArray[0] as Level;
-
-        if (_selectedLevel == null)
+        else if (_brickTypeToolbar.ToolbarMode == ToolbarMode.Unset)
         {
-            // TODO: set selected level and selected cell to null
-            return;
+            levelLayout.SetCellBrick(e.Row, e.Column, null);
         }
-
-        BindLevelLayout(_selectedLevel);
-    }
-
-    private void BindLevelLayout(Level level)
-    {
-        levelLayout.BindLevelLayout(level);
+        else
+        {
+            levelLayout.SetCellBrick(e.Row, e.Column, new Brick() { BrickType = _brickTypeToolbar.SelectedBrickType });
+        }
     }
     
-    private void AddBrickTypeToCell(int row, int column)
-    {
-        var selectedBrickType = _brickTypeToolbar.SelectedBrickType;
+    // private void AddBrickTypeToCell(int row, int column)
+    // {
+    //     var selectedBrickType = _brickTypeToolbar.SelectedBrickType;
+    //
+    //     if (!selectedBrickType)
+    //     {
+    //         return;
+    //     }
+    //     
+    //     levelLayout.SetCellBrick(row, column, new Brick(){ BrickType = selectedBrickType });
+    // }
 
-        if (!selectedBrickType)
+    #endregion
+    
+    #region PowerUpToolbar Events
+    
+    private void UpdateCellPowerUp(CellSelectedEventArgs e)
+    {
+        if (_powerUpToolbar.ToolbarMode == ToolbarMode.Ignore)
         {
             return;
         }
-        
-        levelLayout.SetCellBrick(row, column, new Brick(){ BrickType = selectedBrickType });
+        else if (_powerUpToolbar.ToolbarMode == ToolbarMode.Unset)
+        {
+            levelLayout.SetCellPowerUp(e.Row, e.Column, null);
+        }
+        else
+        {
+            levelLayout.SetCellPowerUp(e.Row, e.Column, _powerUpToolbar.SelectedPowerUp);
+        }
     }
 
+    private void PowerUpToolbarOnPowerUpSelectionChanged(object sender, PowerUp e)
+    {
+        //_brickTypeToolbar.CancelCurrentSelection();
+
+        // _execToolbarActionOnCell = AddPowerUpToCell;
+    }
+    
     private void AddPowerUpToCell(int row, int column)
     {
         var selectedPowerUp = _powerUpToolbar.SelectedPowerUp;
@@ -249,4 +291,15 @@ public class LevelEditor : EditorWindow
         }
         levelLayout.SetCellPowerUp(row, column, selectedPowerUp);
     }
+    
+    #endregion
+    
+    #region LevelLayout Events
+    private void LevelLayoutOnCellSelected(object sender, CellSelectedEventArgs e)
+    {
+        UpdateCellPowerUp(e);
+        UpdateCellBrickType(e);
+    }
+    
+    #endregion
 }

@@ -90,9 +90,16 @@ public partial class LevelLayout : VisualElement
         cell.PowerUp = powerUp;
         
         var veCell = _veMain.Q<VisualElement>($"Cell{row}-{col}");
-        veCell.style.backgroundImage = Background.FromSprite(powerUp.Sprite);
-        veCell.style.backgroundSize = new BackgroundSize(BackgroundSizeType.Contain);
-        veCell.style.unityBackgroundImageTintColor = Color.white;
+        if (powerUp?.Sprite)
+        {
+            veCell.style.backgroundImage = Background.FromSprite(powerUp.Sprite);
+            veCell.style.backgroundSize = new BackgroundSize(BackgroundSizeType.Contain);
+            veCell.style.unityBackgroundImageTintColor = Color.white;
+        }
+        else
+        {
+            veCell.style.backgroundImage = null;
+        }
         
         EditorUtility.SetDirty(_level);
     }
@@ -103,9 +110,13 @@ public partial class LevelLayout : VisualElement
         cell.Brick = brick;
         
         var veCell = _veMain.Q<VisualElement>($"Cell{row}-{col}");
-        if (brick.BrickType)
+        if (brick?.BrickType)
         {
             veCell.style.backgroundColor = brick.BrickType.Color;
+        }
+        else
+        {
+            veCell.style.backgroundColor = new StyleColor(StyleKeyword.None);
         }
         
         EditorUtility.SetDirty(_level);

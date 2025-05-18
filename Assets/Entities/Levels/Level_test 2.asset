@@ -22,7 +22,7 @@ MonoBehaviour:
       <BrickType>k__BackingField: {fileID: 0}
       <InitialHitPoints>k__BackingField: 0
       <HitPoints>k__BackingField: 0
-    powerUp: {fileID: 0}
+    powerUp: {fileID: 11400000, guid: 9334bf7ea79a4a2409236eca8cfe2476, type: 2}
   - brick:
       <BrickType>k__BackingField: {fileID: 0}
       <InitialHitPoints>k__BackingField: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
       <BrickType>k__BackingField: {fileID: 11400000, guid: 91e8b608e9b46324f8e855191930e349, type: 2}
       <InitialHitPoints>k__BackingField: 0
       <HitPoints>k__BackingField: 0
-    powerUp: {fileID: 0}
+    powerUp: {fileID: 11400000, guid: e25d5eebb13233e4d9aa0605f4b88893, type: 2}
   - brick:
       <BrickType>k__BackingField: {fileID: 0}
       <InitialHitPoints>k__BackingField: 0
@@ -234,10 +234,10 @@ MonoBehaviour:
       <HitPoints>k__BackingField: 0
     powerUp: {fileID: 0}
   - brick:
-      <BrickType>k__BackingField: {fileID: 0}
+      <BrickType>k__BackingField: {fileID: 11400000, guid: 7206b987c4ff3ff4f92de46080b30073, type: 2}
       <InitialHitPoints>k__BackingField: 0
       <HitPoints>k__BackingField: 0
-    powerUp: {fileID: 0}
+    powerUp: {fileID: 11400000, guid: 360e757fbbcb1d24dacfd98d4dc7baca, type: 2}
   - brick:
       <BrickType>k__BackingField: {fileID: 0}
       <InitialHitPoints>k__BackingField: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
       <BrickType>k__BackingField: {fileID: 0}
       <InitialHitPoints>k__BackingField: 0
       <HitPoints>k__BackingField: 0
-    powerUp: {fileID: 0}
+    powerUp: {fileID: 11400000, guid: 360e757fbbcb1d24dacfd98d4dc7baca, type: 2}
   - brick:
       <BrickType>k__BackingField: {fileID: 0}
       <InitialHitPoints>k__BackingField: 0
