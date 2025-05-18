@@ -75,10 +75,10 @@ BrickBreaker features classic Arkanoid-style gameplay with several modern enhanc
 ## Development Roadmap
 
 - [x] Project setup and basic architecture
-- [ ] Level editor UI implementation
-- [ ] Brick customization system
-- [ ] Level saving and loading
-- [ ] Level sequence management
+- [x] Level editor UI implementation
+- [x] Brick customization system
+- [x] Level saving and loading
+- [x] Level sequence management
 - [ ] Core gameplay mechanics
 - [ ] Power-up system
 - [ ] Enemy AI
@@ -94,6 +94,10 @@ BrickBreaker features classic Arkanoid-style gameplay with several modern enhanc
 - **UI**: UI Toolkit
 - **Scripting**: C#
 - **Level Storage**: Scriptable Objects
+
+## Update 2025-05-18
+This is how the Level editor looks after the first iteration.
+![BrickBreaker](Images/Level-editor-20250518.png)
 
 ## Contributing
 
